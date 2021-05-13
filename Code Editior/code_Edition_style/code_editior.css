@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+::-moz-selection {
+  background-color: purple;
+  color: white;
+}
+
+::selection {
+  background-color: purple;
+  color: white;
+}
+
+.information {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: purple;
+}
+
+.information .icon {
+  width: 100px;
+}
+
+.information .icon img {
+  width: 24.50px;
+  margin-left: 10px;
+}
+
+.information ul {
+  margin-top: -32px;
+  width: 100%;
+}
+
+.information ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.information ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.information .bars {
+  width: 100px;
+  display: none;
+}
+
+.information .bars i {
+  position: absolute;
+  top: 10px;
+  right: 37px;
+  font-size: 1.50rem;
+  color: white;
+  cursor: pointer;
+}
+
+.code_editor {
+  overflow: hidden;
+  border-bottom: 15px solid purple;
+  border-left: 35px solid purple;
+  border-right: 35px solid purple;
+  padding: 0;
+  margin: 0;
+  background-color: #2C2C32;
+}
+
+.code_editor .button {
+  width: 100%;
+  background-color: #32323b;
+  margin: 0;
+  padding: 10px 24.50px;
+}
+
+.code_editor .button button {
+  padding: 5px 35px;
+  border: none;
+  outline: none;
+  border: 1px solid purple;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.code_editor textarea, .code_editor iframe {
+  width: 100%;
+  height: 80vh;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: #2C2C32;
+  color: white;
+  font-weight: bold;
+  margin: 10px 10px 10px 10px;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+iframe {
+  margin: 0;
+}
+
+.textarea1, .textarea2, .textarea3, .textarea4 {
+  display: none;
+}
+
+.textarea1 {
+  display: block;
+}
+
+.settion {
+  position: absolute;
+  top: 90%;
+  left: 8px;
+}
+
+.settion i {
+  font-size: 1.30rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.settingText {
+  margin-top: -65px;
+  width: 200px;
+  background-color: #32323b;
+  margin-left: 28px;
+  text-align: center;
+  overflow: hidden;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  opacity: 0;
+}
+
+.settingText ul {
+  padding: 5px 0;
+}
+
+.settingText ul li {
+  list-style: none;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 6px 0;
+}
+
+.settingText ul li:hover {
+  background-color: purple;
+}
+
+.settingPOPText {
+  overflow: visible;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  opacity: 1;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.textList {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 350px;
+  height: 200px;
+  background-color: #32323b;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5;
+  border: 2px solid #ded1d14a;
+  display: none;
+}
+
+.textList ul li {
+  margin-top: 10px;
+  list-style: none;
+  padding: 3.50px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
+}
+
+.textList ul li i {
+  margin: 0 5px;
+}
+
+.textList ul li:hover {
+  background-color: #73727238;
+}
+
+.textList::-webkit-scrollbar-track {
+  border: 1px solid #000;
+  padding: 2px 0;
+  background-color: #404040;
+}
+
+.textList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.textList::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #737272;
+  border: 1px solid #000;
+}
+
+.menuText {
+  position: absolute;
+  top: 43px;
+  left: 3%;
+  display: none;
+}
+
+.menuText ul {
+  width: 250px;
+  height: auto;
+  background-color: #32323b;
+  color: white;
+  text-align: center;
+  border: 2px solid #ded1d14a;
+}
+
+.menuText ul li {
+  list-style: none;
+  margin: 0;
+  font-size: 12px;
+  border-bottom: 1px solid #ded1d14a;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.menuText ul li:hover {
+  background-color: #737272;
+}
+
+@media screen and (max-width: 722px) {
+  .information .bars {
+    display: block;
+  }
+  .information ul {
+    display: none;
+  }
+  .information ul.navbar {
+    display: block;
+  }
+  .information ul li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    height: 10px;
+  }
+  .code_editor .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .code_editor .button button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 12.50px;
+    margin: 0 10px 5px -5px;
+  }
+  .menuText {
+    top: 43px;
+    left: 15%;
+  }
+  .code_editor {
+    border-left: 25px solid purple;
+    border-right: 25px solid purple;
+  }
+  .settion {
+    left: 3.50px;
+  }
+}
+/*# sourceMappingURL=code_editior.css.map */
